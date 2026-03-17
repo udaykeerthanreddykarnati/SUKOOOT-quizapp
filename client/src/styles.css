@@ -1,0 +1,225 @@
+/* ===== FONTS (Bangers for Title, Cinzel for Headings) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@600;700;800;900&family=Bangers&display=swap');
+
+/* ===== GLOBAL (Warm Background) ===== */
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at center, #2B2623 0%, #1C1816 100%); /* warm dark brown */
+    margin: 0;
+    padding: 40px;
+    color: #f8e9d9; /* warm cream */
+}
+
+/* ===== CARD (Warm Raised Panel) ===== */
+.card {
+    background: #3A322F; /* warm dark cocoa */
+    border-radius: 24px;
+    max-width: 650px;
+    margin: auto;
+    padding: 32px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+}
+
+/* ===== HEADINGS (Warm Tones) ===== */
+h1, h2, h3, h4 {
+    font-family: 'Bangers', cursive;
+    font-weight: 800;
+    margin-bottom: 8px !important; 
+    margin-top: 0;
+    color: #FFB07C; /* warm peach/orange */
+}
+
+/* Title */
+h1 {
+    font-size: 3.2rem;
+    color: #FF7B42; /* warm sunset orange */
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Warm heading spacing */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 35px !important;
+    margin-bottom: 18px !important;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 30px !important;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 25px !important;
+}
+
+/* ===== BACK BUTTON (Warm Olive) ===== */
+.back-btn {
+    width: auto;
+    padding: 8px 14px;
+    background: #8D7A50; /* warm olive brown */
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff3e5;
+}
+
+.back-btn:hover {
+    background: #A48C60; /* lighter warm olive */
+}
+
+/* ===== MAIN BUTTONS (Warm Clay) ===== */
+button, 
+.btn {
+    width: 100%;
+    padding: 18px 14px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 15px;
+    background: #D9784B; /* warm terracotta */
+    color: #fff8ef;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 0 #A95B34; /* darker clay */
+}
+
+button:hover,
+.btn:hover {
+    background: #C86C41; /* warmer hover */
+    box-shadow: 0 6px 0 #9A4E28;
+}
+
+button:active,
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #A95B34;
+}
+
+/* ===== ADD OPTION BUTTON (Warm Gold) ===== */
+.host-controls button:nth-of-type(3) { 
+    width: auto;
+    max-width: 150px;
+    margin: 15px auto 25px auto; 
+    background: #E3B461; /* warm soft gold */
+    color: #3A2B1F;
+    box-shadow: none;
+}
+
+.host-controls button:nth-of-type(3):hover {
+    background: #F0C67B;
+}
+
+/* ===== INPUTS (Warm Greys) ===== */
+.input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #776559; /* warm muted brown */
+    background: #4A423F; /* warm grey/brown */
+    color: #f1e5d6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input:focus {
+    border-color: #E3B461; /* warm gold */
+    background: #554C49;
+}
+
+/* ===== ROOM CODE BOX (Warm Cream) ===== */
+.room-box {
+    margin-top: 28px;
+    padding: 18px;
+    background: #F5E3C3; /* warm cream */
+    border-radius: 12px;
+    text-align: center;
+    color: #3A2B1F;
+}
+
+.room-code {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #FFF5E8;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: #C76433; /* warm clay/orange */
+}
+
+/* ===== PLAYER LIST ===== */
+.player-score-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #E3B461; /* warm gold line */
+}
+
+/* ===== QUESTION SECTION ===== */
+.question-text {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #FFB07C; /* warm peach */
+    margin-bottom: 18px;
+}
+
+.score-display {
+    background: #F5E3C3;
+    color: #3A2B1F;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== OPTIONS GRID ===== */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.option-btn {
+    padding: 18px 14px;
+    font-size: 1.1rem;
+    background: #C2A671; /* warm sand */
+    color: #3A2B1F;
+    border-radius: 10px;
+}
+
+.option-btn:hover {
+    background: #B69863;
+}
+/* Random warm colors for O */
+.title .o1 { color: #FF7B42; } /* warm orange */
+.title .o2 { color: #FFA552; } /* warm peach */
+.title .o3 { color: #FFBE6F; } /* warm amber */
+.title .o4 { color: #FFC98A; } /* warm cream orange */
+.title .o5 { color: #FF9D6C; } /* coral */
+.title .o6 { color: #DB7B4A; } /* clay */
+.title .o7 { color: #E87D54; } /* terracotta */
+.title .o8 { color: #FF8F54; } /* soft sunset */
+
+/* Horizontal title layout */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;      /* spacing between owl + title */
+    margin-bottom: 25px;
+}
+
+/* Owl Logo (scaled for warm aesthetic) */
+.owl-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;          
+    background: #00000020;        /* subtle warm tint */
+    padding: 4px;
+}
